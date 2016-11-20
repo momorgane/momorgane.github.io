@@ -52,12 +52,10 @@ section {
     height: 6rem;
     width: 6rem;
     margin: 2rem;
-    opacity: 0.7;
 }
 .marketing h1{font-family: 'Advent Pro', sans-serif;}
 .marketing h5{font-family: 'Advent Pro', sans-serif;margin-bottom: 1rem;}
-.imgmarketing{
-    opacity: 0.6;    
+.imgmarketing{ 
 }
 .trading h1{font-family: 'Audiowide', cursive;font-size: 2rem;}
 .trading h5{font-family: 'Audiowide', cursive;margin-bottom: 1rem;}
