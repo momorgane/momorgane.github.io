@@ -50,8 +50,8 @@ section {
 .consulting h1{font-family: 'Crimson Text', serif;}
 .consulting h5{font-family: 'Crimson Text', serif;margin-bottom: 1rem;}
 .imgconsulting{
-    height: 8rem;
-    width: 8rem;
+    height: 7rem;
+    width: 7rem;
     margin: 2rem;
 }
 .marketing{
@@ -84,6 +84,7 @@ section {
     width: 100%;
     height: 100%; 
     overflow: hidden;   
+    margin: 0.5rem;
 }
 .imgzoom img {
     -webkit-transition: all 0.2s ease;
