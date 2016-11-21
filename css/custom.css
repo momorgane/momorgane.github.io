@@ -170,18 +170,20 @@ section {
 .sidebar-alt a { color:#FFF;}
 .sidebar-alt a:hover { color:#18bc9c;}
 @media (max-width: 992px) { 
-    section {margin-top: 5rem;margin-bottom: 4rem;}
+    section {margin-top: 5rem;margin-bottom: 5rem;}
     #pinContainer{padding-left: 0px;}
     .sidebar-nav {position: static;width: 100%;padding: 0;text-align: center;}
     .sidebar-footer {position: static;width: 100%;padding: 0;text-align: center;}
     h1 {font-size: 1.8em;margin: 0.57em 0;}
     .display-5 {font-size: 2em;}
     .avatar{height:10rem;width:10rem;margin-bottom:1.25rem;}
+    .anchorContainer{margin-bottom: 1rem;
 }
 @media (max-width: 543px) { 
     section {margin-top: 1rem;margin-bottom: 3rem;}
     .avatar{height:5rem;width:5rem;margin-bottom:0;}
     h1 {font-size: 1.6em;margin: 0.47em 0;}
+    .anchorContainer{margin-bottom: 0.25rem;
 }
 @media (min-width: 1800px) { 
     body {font-size: 1.2em;}
