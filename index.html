@@ -25,11 +25,14 @@
 <div class="hidden-md-down">
   <div id="sidebar">
     <div class="sidebar-nav">
-      <a data-scroll href="#0"><img class="rounded-circle avatar" src="img/morgane.jpg" alt="Morgane Peng"></a>
+      <div class="avatarContainer">
+        <a data-scroll href="#0"><img id="avatar" src="img/morgane.jpg" alt="Morgane">
+      </a>
+      </div><div style="clear: both;"></div>
       <h1>Hello, I'm Morgane</h1>
       <p>I have been crusing through various areas of design, indie game making, consulting, financial markets, and tech.</p> 
       <p>Now primarily blending user experience with business strategy in the Corporate & Investment Banking world.</p> 
-      <p  class="text-info">A little bit about me <i class="fa fa-long-arrow-down"></i></p>       
+      <p class="text-muted">A little bit about me <i class="fa fa-long-arrow-down"></i></p>       
     </div>
     <div class="sidebar-footer">
       <nav class="nav nav-inline">
@@ -48,11 +51,11 @@
         <div class="panel">
           <div class="sidebar-alt">
             <div class="sidebar-nav">
-              <img class="rounded-circle avatar" src="img/morgane.jpg" alt="Morgane Peng">
+              <img class="rounded-circle avatar" src="img/morgane.jpg" alt="Morgane Peng"/>
               <h1>Hello, I'm Morgane</h1>
               <p>I have been crusing through various areas of design, indie game making, consulting, financial markets, and tech.</p> 
               <p>Now primarily blending user experience with business strategy in the Corporate & Investment Banking world.</p> 
-              <p  class="text-info">A little bit about me <i class="fa fa-long-arrow-down"></i></p>       
+              <p  class="text-muted">A little bit about me <i class="fa fa-long-arrow-down"></i></p>       
             </div>
             <div class="sidebar-footer">
               <nav class="nav nav-inline">
@@ -135,7 +138,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
             <section class="trading">
-              <h1 class="display-5">Electronic Trading Marketing Manager</h1>
+              <h1 class="display-5">Electronic Trading Marketer</h1>
               <h5>2012 - 2016 (4 years 2 months), London</h5>
               <p>Cross-channel marketing of the electronic trading platforms for clients and internal users
               <br/>E-Commerce revenue monitoring with COOs office, database management and IT teams
@@ -153,7 +156,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
             <section class="ux">
-              <h1 class="display-5">Head of User Experience & UI</h1>
+              <h1 class="display-5">Head of User Experience</h1>
               <h5>From 2016, London <span class="tag tag-pill tag-info">Current</span></h5>
               <p>Bringing meaningful experience tailored to the appropriate audience<br/>
               Covering various business areas of the Corporate & Investment Banking industry<br/> 
@@ -217,6 +220,9 @@
   $(window).load(function() {
 		$(".preloader").fadeOut("slow");;
 	});
+  $(function() {
+    $("#avatar").wrap('<figure class="avatartint"></figure>');
+  });
 </script>
 <script>
   smoothScroll.init({

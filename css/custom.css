@@ -17,19 +17,37 @@ a:hover {transform: scale(1.1);}
 body, html {height: 100%}
 body {padding:0;font-family: 'PT Sans', sans-serif;}
 /* Sections */
-section {
-    margin-top: 8rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
+.avatartint {
+    overflow: hidden;
+    float: right;
+    background: #18bc9c;
 }
-.avatar{
-    height:12rem;
-    width:12rem;
-    margin-bottom:2rem;
-    filter: grayscale(10%);
+.avatarContainer figure {
+    border-radius: 50%;
+    -moz-background-clip: padding; 
+    -webkit-background-clip: padding-box; 
+    background-clip: padding-box;
+}  
+.avatarContainer img {
+    float: right;
+    display: block;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    -ms-transition: opacity .25s ease-in-out;
+    -o-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+    border-radius: 50%;
+    -moz-background-clip: padding; 
+    -webkit-background-clip: padding-box; 
+    background-clip: padding-box;
+    width: 12rem;
+    height: 12rem;
+}
+.avatarContainer img:hover {
+    opacity: .5;
 }
 .retro h1{font-family: 'Press Start 2P', cursive;font-size: 1.6rem;}
-.retro h5{font-family: 'Press Start 2P', cursive;font-size: 1rem;margin-bottom: 1rem;}
+.retro h5{font-family: 'Press Start 2P', cursive;font-size: 1rem;}
 .retroimgx1{
     width: 48px;
     height: 48px;
@@ -48,7 +66,7 @@ section {
     float:none;
 }
 .consulting h1{font-family: 'Crimson Text', serif;}
-.consulting h5{font-family: 'Crimson Text', serif;margin-bottom: 1rem;}
+.consulting h5{font-family: 'Crimson Text', serif;}
 .imgconsulting{
     height: 7rem;
     width: 7rem;
@@ -58,9 +76,9 @@ section {
     margin-top: 2.5rem;
 }
 .marketing h1{font-family: 'Advent Pro', sans-serif;}
-.marketing h5{font-family: 'Advent Pro', sans-serif;margin-bottom: 1rem;}
+.marketing h5{font-family: 'Advent Pro', sans-serif;}
 .trading h1{font-family: 'Audiowide', cursive;font-size: 2rem;}
-.trading h5{font-family: 'Audiowide', cursive;margin-bottom: 1rem;}
+.trading h5{font-family: 'Audiowide', cursive;}
 .trading{
     margin-top: 3rem;
 }
@@ -71,7 +89,7 @@ section {
     padding-top: 8rem;
 }
 .ux h1{font-family: 'Josefin Sans', sans-serif;margin-top: 1rem}
-.ux h5{font-family: 'Josefin Sans', sans-serif;margin-bottom: 1rem;}
+.ux h5{font-family: 'Josefin Sans', sans-serif;}
 .end{
     background-color: #252830;
     background-image: url("../img/end.jpg");
@@ -117,6 +135,11 @@ section {
     min-height: 100vh;
     text-align: center;
 }
+section {
+    margin-top: 8rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
 .anchorContainer{
     position: absolute;
     bottom: 0;
@@ -124,9 +147,7 @@ section {
     text-align: center;
     margin-bottom: 2rem;
 }
-.anchorContainer a { color:#ccc;}
-.anchorContainer a:hover { color:#18bc9c;}
-.anchorContainer a:active { color:#18bc9c;}
+.anchorContainer a { color:#18bc9c;}
 .anchorContainer i {padding:1rem;transition: all 0.25s ease-in-out 0s;}
 .anchorContainer i:hover {transform: scale(1.25);}
 
@@ -170,21 +191,23 @@ section {
 .sidebar-alt a { color:#FFF;}
 .sidebar-alt a:hover { color:#18bc9c;}
 @media (max-width: 992px) { 
-    section {margin-top: 5rem;margin-bottom: 5rem;}
+    section {margin-top: 5rem;margin-bottom: 4rem;}
     #pinContainer{padding-left: 0px;}
     .sidebar-nav {position: static;width: 100%;padding: 0;text-align: center;}
     .sidebar-footer {position: static;width: 100%;padding: 0;text-align: center;}
     h1 {font-size: 1.8em;margin: 0.57em 0;}
     .display-5 {font-size: 2em;}
     .avatar{height:10rem;width:10rem;margin-bottom:1.25rem;}
-    .anchorContainer{margin-bottom: 1rem;
+    .anchorContainer{margin-bottom: 1rem;}
 }
 @media (max-width: 543px) { 
     section {margin-top: 1rem;margin-bottom: 3rem;}
     .avatar{height:5rem;width:5rem;margin-bottom:0;}
     h1 {font-size: 1.6em;margin: 0.47em 0;}
-    .anchorContainer{margin-bottom: 0.25rem;
+    h5 {margin-bottom: 1.5rem;}
+    .anchorContainer{margin-bottom: 0.25rem;}
 }
 @media (min-width: 1800px) { 
-    body {font-size: 1.2em;}
+    body {font-size:1.2rem;}
+    h5 {margin-bottom: 2rem;}
 }
