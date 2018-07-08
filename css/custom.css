@@ -23,7 +23,6 @@ h1{font-family: 'Muli', sans-serif;font-weight: 700;font-size: 1.5rem;}
 .imgzoom {
 position: relative;
 overflow: hidden;
-background-color:#000;
 }
 .imgzoom img {
 max-width: 100%;
@@ -35,7 +34,6 @@ transition: all 0.25s;
 -moz-transform: scale(1.1);
 -webkit-transform: scale(1.1);
 transform: scale(1.1);
-opacity:0.5;
 }
 
 /* responsive */
