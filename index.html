@@ -17,16 +17,17 @@
   <meta property="og:title" content="Morgane Peng" />
   <meta property="og:url" content="http://morganepeng.com" />
   <meta property="og:image" content="http://morganepeng.com/img/thumb.png"/>
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-TFCQSJJ');</script>
+  <script>
+      var trackOutboundLink = function(url) {
+         ga('send', 'event', 'outbound', 'click', url, {
+           'transport': 'beacon',
+           'hitCallback': function(){document.location = url;}
+         });
+      }
+      </script>
 </head>
 
 <body>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFCQSJJ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-10 m-md-5 m-3">
@@ -39,15 +40,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     <div class="col-md-10 m-md-5 m-3">
       <h1 class="mb-3">Conferences & talks</h1>
-      <p><a href="https://www.invisionapp.com/webinars/financial-design">Lessons from Design Leaders: Designing for the Financial Space</a><br/><span class="text-muted ">InVision, May 2018</span></p>
-      <p><a href="http://www.marcusevans-conferences-paneuropean.com/marcusevans-conferences-event-details.asp?EventID=24151&SectorID=2#.W0EqINJKiUk">Optimize User Experience and Digital Design to Increase Customer Centricity for Financial Institutions</a><br/><span class="text-muted ">Marcus Evans, Apr 2018</span></p>
+      <p><a href="https://www.invisionapp.com/webinars/financial-design" onclick="trackOutboundLink('https://www.invisionapp.com/webinars/financial-design'); return false;">Lessons from Design Leaders: Designing for the Financial Space</a><br/><span class="text-muted ">InVision, May 2018</span></p>
+      <p><a href="http://www.marcusevans-conferences-paneuropean.com/marcusevans-conferences-event-details.asp?EventID=24151&SectorID=2#.W0EqINJKiUk" onclick="trackOutboundLink('http://www.marcusevans-conferences-paneuropean.com/marcusevans-conferences-event-details.asp?EventID=24151&SectorID=2#.W0EqINJKiUk'); return false;">Optimize User Experience and Digital Design to Increase Customer Centricity for Financial Institutions</a><br/><span class="text-muted ">Marcus Evans, Apr 2018</span></p>
       <p>How to Design a Digital Service with Our B2B Design System<br/><span class="text-muted">Société Générale Bank & Trust, Nov 2017</span></p>
       <p>Design Thinking Secrets: from Ideation to Implementation<br/><span class="text-muted">Societe Generale, Mar 2017</span></p>
     </div>
 
     <div class="col-md-10 m-md-5 m-3">
         <h1 class="mb-3">Writing</h1>
-        <p><a href="https://design.sgmarkets.com/approach.html">Tackling complex financial subjects in the BtoB space</a><br/><span class="text-muted ">SG Markets Design, Jun 2018</span></p>
+        <p><a href="https://design.sgmarkets.com/approach.html" onclick="trackOutboundLink('https://design.sgmarkets.com/approach.html'); return false;">Tackling complex financial subjects in the BtoB space</a><br/><span class="text-muted ">SG Markets Design, Jun 2018</span></p>
         <p>How to conduct a design-lead project <small>(white paper available upon request)</small><br/><span class="text-muted">Societe Generale Corporate and Investment Banking, 2016-2018</span></p>
     </div>
     
@@ -107,7 +108,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </p>
         </div>
         <div class="col-xs-auto">
-          <a target="_blank" href="http://www.koruldia.com" data-toggle="tooltip" data-placement="top" title="Discover my next indie game!">
+          <a target="_blank" href="http://www.koruldia.com" data-toggle="tooltip" data-placement="top" title="Discover my next indie game!" onclick="trackOutboundLink('http://www.koruldia.com'); return false;">
           <p><img src="img/retro2.gif" alt="Easter"/><img src="img/retro1.gif"alt="Egg"/></p></a>
         </a>
       </div>
