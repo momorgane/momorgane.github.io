@@ -1,6 +1,6 @@
 /* bootstrap overrides */
 body, html {height: 100%;}
-body {font-family: 'PT Sans', sans-serif;font-size: 1.125rem;}
+body {font-family: 'PT Sans', sans-serif;font-size: 1.125rem;color: rgba(0,0,0,.84);}
 p .lead {font-size: 1.25rem;}
 a {transition: color 0.25s ease-in-out 0s;}
 a {color:#400eeb ;}
