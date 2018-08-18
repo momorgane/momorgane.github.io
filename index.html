@@ -13,7 +13,36 @@
   <meta property="og:title" content="Morgane Peng" />
   <meta property="og:url" content="http://morganepeng.com" />
   <meta property="og:image" content="http://morganepeng.com/img/thumb.png"/>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <style>
+  :root{--white:#fff;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";}
+  *,::after,::before{box-sizing:border-box;}
+  *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}  
+  @-ms-viewport{width:device-width;}
+  @font-face{font-family:'PT Sans';font-style:normal;font-weight:400;src:local('PT Sans'),local('PTSans-Regular'),url(https://fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KEwA.ttf) format('truetype')}
+  html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar;}
+  body{margin:0;font-weight:400;line-height:1.5;text-align:left;background-color:#fff;font-family:'PT Sans',sans-serif;font-size:1.125rem;color:rgba(0,0,0,.84);}
+  p{margin-top:0;margin-bottom:1rem;}
+  a{color:#400eeb;text-decoration:none;}
+  img{vertical-align:middle;border-style:none}
+  h1{line-height:1.2;margin-top:0;margin-bottom:.5rem;font-family:'Muli',sans-serif;font-weight:700;font-size:1.5rem;}
+  .lead{font-size:1.25rem;font-weight:300;}
+  .display-3{font-size:4.5rem;line-height:1.2;font-family:'Muli',sans-serif;font-weight:700;}
+  .img-fluid{max-width:100%;height:auto}
+  .container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+  .row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}
+  .col-lg-5,.col-md-10,.col-sm-7,.col-sm-auto{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}
+  .avatar{margin-top:3rem;width:10rem;height:10rem;}
+  .imgzoom{position:relative;overflow:hidden;}
+  .imgzoom img{max-width:100%}
+  .gif{opacity:.84;}
+  .d-sm-none{display: none;};
+  @media (max-width:543px){.display-3{font-size:2.5em;}body{font-size:1rem;}}
+  @media (min-width:576px){.container{max-width:540px;}.col-sm-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none;}.col-sm-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}}
+  @media (min-width:768px){.container{max-width:720px}.col-md-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}}
+  @media (min-width:992px){.container{max-width:960px;}.col-lg-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}}
+  @media (max-width:992px){.display-3{font-size:3em;}}
+  @media (min-width:1200px){.container{max-width:1140px;}}
+  </style> 
   <script>
     var trackOutboundLink = function(url) {
         ga('send', 'event', 'outbound', 'click', url, {
@@ -130,11 +159,21 @@
     </div>
   </div>
 </div>
-<noscript id="deferred-styles">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Press+Start+2P|Crimson+Text|Josefin+Sans|Advent+Pro|Audiowide" rel="stylesheet">
-  <link rel="stylesheet" href="css/custom.css">
-</noscript>
-<script>
+<script>var cb = function() {
+    var l = document.createElement('link'); l.rel = 'stylesheet';
+    l.href = 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css';
+    var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+    webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+  </script>
+  <noscript id="deferred-styles">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Press+Start+2P|Crimson+Text|Josefin+Sans|Advent+Pro|Audiowide" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+  </noscript>
+  <script>
     var loadDeferredStyles = function() {
       var addStylesNode = document.getElementById("deferred-styles");
       var replacement = document.createElement("div");
