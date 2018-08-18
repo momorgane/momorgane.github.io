@@ -35,6 +35,9 @@ transition: all 0.25s;
 -webkit-transform: scale(1.1);
 transform: scale(1.1);
 }
+.gif{
+    opacity: 0.84;
+}
 
 /* responsive */
 @media (min-width: 1800px) { 
