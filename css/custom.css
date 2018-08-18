@@ -51,3 +51,50 @@ transform: scale(1.1);
     body {font-size: 1rem;}
     p .lead {font-size: 1.125rem;}
 }
+
+/* Tooltip container */
+.tooltipp {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltipp .tooltipptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #292929;
+    color: #fff;
+    text-align: center;
+    padding: 4px 2px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltipp .tooltipptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #292929 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltipp:hover .tooltipptext {
+    visibility: visible;
+    opacity: 1;
+}
