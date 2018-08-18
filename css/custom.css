@@ -12,6 +12,7 @@ h1{font-family: 'Muli', sans-serif;font-weight: 700;font-size: 1.5rem;}
 .avatar {
     width: 10rem;
     height: 10rem;
+    margin:0;
 }
 * {
     -moz-box-sizing: border-box;
