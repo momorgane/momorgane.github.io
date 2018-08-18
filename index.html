@@ -132,18 +132,22 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans|Press+Start+2P|Crimson+Text|Josefin+Sans|Advent+Pro|Audiowide" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css">
 </noscript>
-<script>var cb = function() {
-    var l = document.createElement('link'); l.rel = 'stylesheet';
-    l.href = 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css';
-    var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+<script>
+    var loadDeferredStyles = function() {
+      var addStylesNode = document.getElementById("deferred-styles");
+      var replacement = document.createElement("div");
+      replacement.innerHTML = addStylesNode.textContent;
+      document.body.appendChild(replacement)
+      addStylesNode.parentElement.removeChild(addStylesNode);
     };
-    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-    webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(cb);
-    else window.addEventListener('load', cb);</script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+    else window.addEventListener('load', loadDeferredStyles);
+  </script>
+<script async src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <script>
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
