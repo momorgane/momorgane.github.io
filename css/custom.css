@@ -7,7 +7,7 @@ a {color:#400eeb ;}
 a:hover { color:#330bbb;}
 h1{font-family: 'Muli', sans-serif;font-weight: 700;font-size: 1.5rem;}
 .display-3{font-family: 'Muli', sans-serif;font-weight: 700;}
-
+.alert-success {background-color: #14e06e;border-color: #14e06e;color: #fff;border-radius: 0;}
 /* custom */
 .avatar {
     width: 10rem;
