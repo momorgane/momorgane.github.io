@@ -57,7 +57,7 @@
       var now = new Date().getTime();
       var distance = countDownDate - now;
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      document.getElementById("countdown").innerHTML = "Psss, our kickstarter campain goes live in <b>" + days + "</b> days!";
+      document.getElementById("countdown").innerHTML = "Psss, my game's kickstarter campain goes live in <b>" + days + "</b> days!";
       if (distance < 0) {
           clearInterval(x);
           document.getElementById("countdown").innerHTML = "Kickstarter is live now!";
@@ -78,7 +78,8 @@
                 </div>
                 <div style="position: absolute; left: -5000px;"><input type="text" name="b_cd4c3628420ef62d0f8a67942_72eb0f0ef1" tabindex="-1" value=""></div>
                 <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Enter your email" size="35">&nbsp;&nbsp;
-                <input type="submit" value="Remind me when it goes live" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary" style="cursor: pointer;"><br/>
+                <input type="submit" value="Remind me" name="subscribe" id="mc-embedded-subscribe" class="btn btn-dark" style="cursor: pointer;" onclick="trackOutboundLink('MailChimp'); return false;">
+                <a class="btn btn-outline-dark" target="_blank" href="https://www.koruldia.com" onclick="trackOutboundLink('https://www.koruldia.com'); return false;">Discover the game</a><br/>
             </div>
         </form>
     </div>
@@ -180,7 +181,7 @@
           </p>
         </div>
         <div class="col-xs-auto">
-          <a target="_blank" href="http://www.koruldia.com" onclick="trackOutboundLink('http://www.koruldia.com'); return false;">
+          <a target="_blank" href="https://www.koruldia.com" onclick="trackOutboundLink('https://www.koruldia.com'); return false;">
             <div class="tooltipp"><img src="img/retro2.gif" alt="Easter"/><img src="img/retro1.gif"alt="Egg"/></p>
               <span class="tooltipptext">Discover my next indie game!</span>
             </div>
