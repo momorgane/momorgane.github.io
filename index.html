@@ -52,12 +52,12 @@
     }
   </script>
   <script>
-  var countDownDate = new Date("Nov 6, 2018 23:00:00").getTime();
+  var countDownDate = new Date("Nov 13, 2018 11:00:00").getTime();
   var x = setInterval(function() {
       var now = new Date().getTime();
       var distance = countDownDate - now;
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      document.getElementById("countdown").innerHTML = "Psss, my game's kickstarter campain goes live in <b>" + days + "</b> days!";
+      document.getElementById("countdown").innerHTML = "Psss, my game's kickstarter campain goes live in <b>" + days + "</b> days! <small>(updated)</small>";
       if (distance < 0) {
           clearInterval(x);
           document.getElementById("countdown").innerHTML = "Kickstarter is live now!";
