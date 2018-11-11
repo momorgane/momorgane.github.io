@@ -51,24 +51,11 @@
         });
     }
   </script>
-  <script>
-  var countDownDate = new Date("Nov 13, 2018 11:00:00").getTime();
-  var x = setInterval(function() {
-      var now = new Date().getTime();
-      var distance = countDownDate - now;
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      document.getElementById("countdown").innerHTML = "Psss, my game's kickstarter campain goes live in <b>" + days + "</b> days! <small>(updated)</small>";
-      if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("countdown").innerHTML = "Kickstarter is live now!";
-      }
-  }, 1000);
-  </script>
 </head>
 
 <body>
 <div class="alert alert-success m-0" role="alert">
-    <h3 id="countdown" class="text-center"></h3> 
+    <h3 class="text-center">Hey my game's kickstarter campain goes live this Tuesday!</h3> 
     <div id="mc_embed_signup">
         <form action="//koruldia.us10.list-manage.com/subscribe/post?u=cd4c3628420ef62d0f8a67942&amp;id=72eb0f0ef1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline justify-content-center" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll" class="text-center">
@@ -78,7 +65,7 @@
                 </div>
                 <div style="position: absolute; left: -5000px;"><input type="text" name="b_cd4c3628420ef62d0f8a67942_72eb0f0ef1" tabindex="-1" value=""></div>
                 <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Enter your email" size="35">&nbsp;&nbsp;
-                <input type="submit" value="Remind me" name="subscribe" id="mc-embedded-subscribe" class="btn btn-dark" style="cursor: pointer;">
+                <input type="submit" value="Send me a notification" name="subscribe" id="mc-embedded-subscribe" class="btn btn-dark" style="cursor: pointer;">
                 <a class="btn btn-outline-dark" target="_blank" href="https://www.koruldia.com" onclick="trackOutboundLink('https://www.koruldia.com'); return false;">Discover the game</a><br/>
             </div>
         </form>
