@@ -51,11 +51,27 @@
         });
     }
   </script>
+  <script>
+    var countDownDate = new Date("Nov 14, 2018 12:00:00").getTime();
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var hours = Math.floor(distance / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("countdown").innerHTML = hours + " hours, "
+        + minutes + " min " + seconds + "s until my game's Kickstarter campaign!";
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "<a style=\"color:white;text-decoration: underline;\" href=\"https://www.kickstarter.com/profile/koruldia\">The Kickstarter campaign is live!</a>";
+        }
+    }, 1000);
+    </script>
 </head>
 
 <body>
 <div class="alert alert-success m-0" role="alert">
-    <h3 class="text-center">Hey my game's kickstarter campain goes live this Tuesday!</h3> 
+  <h3 class="text-center" id="countdown"></h3> 
     <div id="mc_embed_signup">
         <form action="//koruldia.us10.list-manage.com/subscribe/post?u=cd4c3628420ef62d0f8a67942&amp;id=72eb0f0ef1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline justify-content-center" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll" class="text-center">
