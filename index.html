@@ -51,41 +51,12 @@
         });
     }
   </script>
-  <script>
-    var countDownDate = new Date("Nov 14, 2018 12:00:00").getTime();
-    var x = setInterval(function() {
-        var now = new Date().getTime();
-        var distance = countDownDate - now;
-        var hours = Math.floor(distance / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        document.getElementById("countdown").innerHTML = hours + " hours, "
-        + minutes + " min " + seconds + "s until my game's Kickstarter campaign!";
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown").innerHTML = "<a style=\"color:white;text-decoration: underline;\" href=\"https://kickstarter.com/projects/koruldia/1425551156?ref=611051&token=ac3b7dd8">The Kickstarter campaign is live!</a>";
-        }
-    }, 1000);
-    </script>
 </head>
 
 <body>
-<div class="alert alert-success m-0" role="alert">
-  <h3 class="text-center" id="countdown"></h3> 
-    <div id="mc_embed_signup">
-        <form action="//koruldia.us10.list-manage.com/subscribe/post?u=cd4c3628420ef62d0f8a67942&amp;id=72eb0f0ef1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline justify-content-center" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll" class="text-center">
-                <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-                </div>
-                <div style="position: absolute; left: -5000px;"><input type="text" name="b_cd4c3628420ef62d0f8a67942_72eb0f0ef1" tabindex="-1" value=""></div>
-                <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Enter your email" size="35">&nbsp;&nbsp;
-                <input type="submit" value="Send me a notification" name="subscribe" id="mc-embedded-subscribe" class="btn btn-dark" style="cursor: pointer;">
-                <a class="btn btn-outline-dark" target="_blank" href="https://www.koruldia.com" onclick="trackOutboundLink('https://www.koruldia.com'); return false;">Discover the game</a><br/>
-            </div>
-        </form>
-    </div>
+<div class="alert alert-success text-center m-0" role="alert">
+  <h3 >My game's campaign is going live today!</h3> 
+    <a class="btn btn-dark" target="_blank" href="https://www.koruldia.com" onclick="trackOutboundLink('https://www.koruldia.com'); return false;">Visit announcement page</a>
 </div>
 <div class="container">
   <div class="row justify-content-center">
@@ -96,15 +67,15 @@
           <img src="img/morganepeng.png" alt="Morgane Peng" />
         </div>
       </div>
-      <!-- <div class="d-none d-sm-block col-lg-5 col-sm-7 ml-md-0 mt-md-0 mb-md-5 mt-1 mb-3">
-        <img src="img/interests.gif" class="gif img-fluid" alt="likes art, mindfulness, business stuffs, video games, shiba dogs and coffee!" />
-      </div> -->
+      <!-- <div class="d-none d-sm-block col-lg-5 col-sm-7 ml-md-0 mt-md-0 mb-md-5 mt-1 mb-3"> -->
+        <!-- <img src="img/interests.gif" class="gif img-fluid" alt="likes art, mindfulness, business stuffs, video games, shiba dogs and coffee!" /> -->
+      <!-- </div> -->
     </div>
       <h1 class="display-3 mt-md-3 mb-3">Hello, I'm Morgane.</h1>
       <p class="lead mb-4">I have been adventuring through various fields of design, indie game making, consulting, financial markets and tech. Now primarily blending User Experience with Business Strategy in the financial space.</p> 
-      <!-- <div class="d-block d-sm-none m-3">
-          <img src="img/interests.gif" class="gif img-fluid" alt="likes art, mindfulness, business stuffs, video games, shiba dogs and coffee!" />
-        </div>   -->
+      <!-- <div class="d-block d-sm-none m-3"> -->
+          <!-- <img src="img/interests.gif" class="gif img-fluid" alt="likes art, mindfulness, business stuffs, video games, shiba dogs and coffee!" /> -->
+        <!-- </div>   -->
     </div>
     
     <div class="col-md-10 m-md-5 m-3">
