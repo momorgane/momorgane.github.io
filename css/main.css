@@ -1,0 +1,136 @@
+body, html {height: 100%;}
+html{line-height:1.5;}
+body {background-color: #fdfdfd; font-family: 'PT Sans', sans-serif;font-size: 1.125rem;color: rgba(0,0,0,.84);}
+p{margin-top:0;margin-bottom:0.8rem;}
+h1{margin-top:1rem;margin-bottom:2rem;font-family:'Muli',sans-serif;font-weight:800;font-size:1.5rem;}
+.display{font-size:4.5rem;line-height:1.2;}
+.lead{font-size:1.4rem;}
+.small, small {font-size: 80%;}
+a {color: #400eeb;font-weight: 700;border-bottom: 3px solid rgba(64, 14, 235, .20);text-decoration: none;transition: 400ms border-color ease-in-out, 200ms color ease-in-out;}
+a:hover {border-color: #400eeb;}
+.txt_center {text-align: center!important;}
+.txt_muted {color: #6c757d!important;}
+.txt_bold{font-weight: 700;}
+.float_right {float: right!important;}
+
+.container{padding-right:42px;padding-left:42px;margin-right:auto;margin-left:auto;}
+.my_6{margin-top:6rem!important;margin-bottom:6rem!important;}
+.my_2{margin-top:2rem!important;margin-bottom:2rem!important;}
+.my_1{margin-top:1rem!important;margin-bottom:1rem!important;}
+.mt_2{margin-top:2rem!important;}
+.mt_1{margin-top:1rem!important;}
+.mb_2{margin-bottom:2rem!important;}
+.mb_1{margin-bottom:1rem!important;}
+.mr_2{margin-right:2rem!important;}
+.mr_1{margin-right:1rem!important;}
+
+.avatar{width:10rem;height:10rem;}
+.rounded {border-radius: 50%!important;}
+.img_fluid{max-width:100%;height:auto}
+.badge {background-color: #ffdb58;border-radius: 8rem;display: inline-block;padding: .1em .6em;font-size: 85%;font-weight: 700;text-align: center;white-space: nowrap;vertical-align: baseline;transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+
+@media (max-width:576px){
+    body{font-size:1rem;}
+    .display{font-size:3em;}
+    .lead{font-size:1.25rem;}
+    .grid_sm{max-width:540px;}
+    .container{padding-right:20px;padding-left:20px;}
+    .my_6{margin-top:3rem!important;margin-bottom:3rem!important;}
+    .my_2{margin-top:1rem!important;margin-bottom:1rem!important;}
+    .my_1{margin-top:0.5rem!important;margin-bottom:0.5rem!important;}
+    .mt_2{margin-top:1rem!important;}
+    .mt_1{margin-top:0.5rem!important;}
+    .mb_2{margin-bottom:1rem!important;}
+    .mb_1{margin-bottom:0.5rem!important;}
+}
+@media (min-width:768px){
+    .grid_sm{max-width:690px}
+}
+@media (min-width:992px){
+    .grid_sm{max-width:740px;}
+}
+@media (min-width:1200px){
+    .grid_sm{max-width:820px;}
+    .grid_lg{max-width:1180px;}
+}
+@media (min-width: 1800px) {
+    .grid_sm{max-width:860px;} 
+    html {font-size:1.2rem;}
+}
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 0% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+
+.span_2_of_2 {width: 100%;}
+.span_1_of_2 {width: 49.2%;}
+@media only screen and (max-width: 768px) {
+    .col {margin: 1% 0 1% 0%;}
+    .span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+/* Tooltip container */
+.tooltipp {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltipp .tooltipptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #292929;
+    color: #fff;
+    text-align: center;
+    padding: 4px 2px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltipp .tooltipptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #292929 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltipp:hover .tooltipptext {
+    visibility: visible;
+    opacity: 1;
+}
