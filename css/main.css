@@ -68,28 +68,37 @@ a:hover {border-color: #400eeb;}
 .col {
 	display: block;
 	float:left;
-	margin: 1% 0 0% 1.6%;
+	margin: 1% 0 1% 1%;
 }
+/* http://www.responsivegridsystem.com/calculator/ */
 .col:first-child { margin-left: 0; }
 .group:before,
 .group:after { content:""; display:table; }
 .group:after { clear:both;}
 
 .span_2_of_2 {width: 100%;}
-.span_1_of_2 {width: 49.2%;}
+.span_1_of_2 {width: 49.5%;}
 @media only screen and (max-width: 768px) {
     .col {margin: 1% 0 1% 0%;}
     .span_2_of_2, .span_1_of_2 { width: 100%; }
 }
 
 .span_3_of_3 { width: 100%; }
-.span_2_of_3 { width: 66.13%; }
-.span_1_of_3 { width: 32.26%; }
-@media only screen and (max-width: 480px) {
+.span_2_of_3 { width: 66.33%; }
+.span_1_of_3 { width: 32.66%; }
+@media only screen and (max-width: 640px) {
 	.col {  margin: 1% 0 1% 0%; }
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
+.span_4_of_4 { width: 100%; }
+.span_3_of_4 { width: 74.75%; }
+.span_2_of_4 { width: 49.5%; }
+.span_1_of_4 { width: 24.25%; }
+@media only screen and (max-width: 640px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_4_of_4, .span_3_of_4, .span_2_of_4, .span_1_of_4 { width: 100%; }
+}
 
 .tooltipp {
     position: relative;
