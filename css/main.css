@@ -2,7 +2,8 @@ body, html {height: 100%;}
 html{line-height:1.5;}
 body {background-color: #fdfdfd; font-family: 'PT Sans', sans-serif;font-size: 1.125rem;color: rgba(0,0,0,.84);}
 p{margin-top:0;margin-bottom:0.8rem;}
-h1{margin-top:1rem;margin-bottom:2rem;font-family:'Muli',sans-serif;font-weight:800;font-size:1.5rem;}
+h1{margin-top:1rem;margin-bottom:2rem;font-family:'Muli',sans-serif;font-weight:800;font-size:1.6rem;}
+h2{margin-top:1rem;margin-bottom:0.5rem;font-weight:800;font-size:1.125rem;}
 .display{font-size:4.5rem;line-height:1.2;}
 .lead{font-size:1.4rem;}
 .small, small {font-size: 80%;}
@@ -16,6 +17,7 @@ a:hover {border-color: #400eeb;}
 
 .container{padding-right:42px;padding-left:42px;margin-right:auto;margin-left:auto;}
 .my_6{margin-top:6rem!important;margin-bottom:6rem!important;}
+.my_4{margin-top:4rem!important;margin-bottom:4rem!important;}
 .my_2{margin-top:2rem!important;margin-bottom:2rem!important;}
 .my_1{margin-top:1rem!important;margin-bottom:1rem!important;}
 .mt_2{margin-top:2rem!important;}
@@ -39,6 +41,7 @@ a:hover {border-color: #400eeb;}
     .grid_sm{max-width:540px;}
     .container{padding-right:20px;padding-left:20px;}
     .my_6{margin-top:3rem!important;margin-bottom:3rem!important;}
+    .my_4{margin-top:1.5rem!important;margin-bottom:1.5rem!important;}
     .my_2{margin-top:1rem!important;margin-bottom:1rem!important;}
     .my_1{margin-top:0.5rem!important;margin-bottom:0.5rem!important;}
     .mt_2{margin-top:1rem!important;}
