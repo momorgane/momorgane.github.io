@@ -6,7 +6,7 @@ h1{margin-top:1rem;margin-bottom:2rem;font-family:'Muli',sans-serif;font-weight:
 h2{margin-top:1rem;margin-bottom:0.5rem;font-weight:800;font-size:1.125rem;}
 .display{font-size:4.5rem;line-height:1.2;}
 .lead{font-size:1.4rem;}
-.small, small {font-size: 80%;}
+.small, small {font-size: 85%;}
 a {color: #400eeb;font-weight: 700;border-bottom: 3px solid rgba(64, 14, 235, .20);text-decoration: none;transition: 400ms border-color ease-in-out, 200ms color ease-in-out;}
 a:hover {border-color: #400eeb;}
 .txt_center {text-align: center!important;}
@@ -33,6 +33,7 @@ a:hover {border-color: #400eeb;}
 .rounded {border-radius: 50%!important;}
 .img_fluid{max-width:100%;height:auto}
 .badge {background-color: #ffdb58;border-radius: 8rem;display: inline-block;padding: .1em .6em;font-size: 85%;font-weight: 700;text-align: center;white-space: nowrap;vertical-align: baseline;transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+.badge_secondary {background-color: #efefef; color: #6c757d;border-radius: 8rem;display: inline-block;padding: .1em .6em;font-size: 85%;font-weight: 700;text-align: center;white-space: nowrap;vertical-align: baseline;transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
 
 @media (max-width:576px){
     body{font-size:1rem;}
