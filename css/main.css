@@ -33,7 +33,7 @@ a:hover {border-color: #400eeb;}
 .rounded {border-radius: 50%!important;}
 .img_fluid{max-width:100%;height:auto}
 .badge {background-color: #ffdb58;border-radius: 8rem;display: inline-block;padding: .1em .6em;font-size: 85%;font-weight: 700;text-align: center;white-space: nowrap;vertical-align: baseline;transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
-.badge_secondary {background-color: #efefef; color: #646d77;border-radius: 8rem;display: inline-block;padding: .1em .6em;font-size: 85%;font-weight: 700;text-align: center;white-space: nowrap;vertical-align: baseline;transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+.badge_secondary {background-color: #efefef; color: #525b65;border-radius: 8rem;display: inline-block;padding: .1em .6em;font-size: 85%;font-weight: 700;text-align: center;white-space: nowrap;vertical-align: baseline;transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
 
 @media (max-width:576px){
     body{font-size:1rem;}
