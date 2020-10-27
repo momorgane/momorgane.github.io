@@ -7,18 +7,29 @@ h2{padding-top:0rem;padding-bottom:1rem;font-weight:700;font-size:1.15rem;margin
 .display{font-size:4.4rem;line-height:1.25;padding-bottom:1rem;}
 .lead{font-size:1.4rem; line-height:1.75;}
 .small, small {font-size: 85%;}
-a {color: #400eeb;font-weight: 700;border-bottom: 3px solid rgba(64, 14, 235, .20);text-decoration: none;transition: 0.2s border-color cubic-bezier(.02,.66,.37,.7), 0.1s;}
+a {color: #400eeb;font-weight: 700;border-bottom: 3px solid rgba(64, 14, 235, .20);text-decoration: none;transition: 0.2s border-color cubic-bezier(.6,.6,.4,.9), 0.1s;}
 a:hover {
-    border-color: #400eeb;
-    background-image: linear-gradient(
-        transparent 55%,
-        rgba(64, 14, 235, .15) 55%,
-        rgba(64, 14, 235, .15) 100%,
+border-color: #400eeb;
+background-image: linear-gradient(
+    transparent 45%,
+    rgba(64, 14, 235, .15) 45%,
+    rgba(64, 14, 235, .15) 100%,
+    transparent 100%
+);
+background-repeat: no-repeat;
+background-size: 0% 100%;
+animation: animatedLink 0.2s cubic-bezier(.6,.6,.4,.9) 0.1s forwards;
+}  
+.highlight {
+font-weight:500;
+background-image: linear-gradient(
+        transparent 45%,
+        rgba(255, 219, 88, 1) 45%,
+        rgba(255, 219, 88, 1) 100%,
         transparent 100%
     );
     background-repeat: no-repeat;
-    background-size: 0% 100%;
-    animation: animatedLink 0.2s cubic-bezier(.02,.66,.37,.7) 0.1s forwards;
+    background-size: 100% 100%;
 }
 @keyframes animatedLink {
     to {
