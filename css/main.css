@@ -63,6 +63,11 @@ li {margin-bottom:0.2rem;}
 .badge_secondary {background-color: #efefef; line-height:1; color: #525b65;border-radius: 8rem;display: inline-block;padding: .4em .6em;font-size: 80%;font-weight: 700;text-align: center;white-space: nowrap;vertical-align: baseline;transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
 
 .groupline {border-left: 1px solid hsla(200,5%,78%,.7);padding-left: 1.75rem;}
+.callout {background-color: hsla(200,5%,78%,.2);padding: 1.75rem;}
+.callout a::before  {
+    content: "💡 ";
+  }
+.callout p:last-child { margin-bottom: 0 !important; }
 
 @media (max-width:576px){
     body{font-size:1rem;}
