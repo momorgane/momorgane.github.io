@@ -68,6 +68,7 @@ img, video {
 .logo { font-size: 1.2rem; }
 .img_fluid { max-width: 100%; height: auto; }
 .img_cover { width: 100%; height: 100%; object-fit: cover; }
+.img_link { text-decoration: none !important; border:0px !important; animation: none!important; }
 .badge_secondary { background-color: #efefef; line-height: 1; color: #525b65; border-radius: 8rem; display: inline-block; padding: .4em .6em; font-size: 80%; font-weight: 700; text-align: center; white-space: nowrap; vertical-align: baseline; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
 .callout_media { box-shadow: -8px 8px 0 0 rgba(0,0,0,.84); border: 1px solid #fdfdfd; }
 .callout_section { padding: 2rem; box-shadow: -8px 8px 0 0 rgba(0,0,0,.84); border: 3px solid rgba(0,0,0,.84); }
