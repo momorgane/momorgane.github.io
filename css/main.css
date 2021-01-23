@@ -107,6 +107,7 @@ img, video {
     .mr_2 { margin-right: 1.2rem!important; }
     .logo { display: none;}
     .logo_md { display: none;}
+    .small, small { font-size: 100%; }
     #navbar .my_1 { margin-top: 0.8rem!important; margin-bottom: 0.8rem!important; }
     #navbar .mt_2 { margin-top: 0rem!important; }
 }
