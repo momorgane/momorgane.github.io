@@ -1,5 +1,5 @@
 html { margin: 0; padding: 0; scroll-behavior: smooth; scroll-padding-top: 70px; line-height: 1.5; }
-body { margin: 0; padding: 0; min-height: 100vh; background-color: #fdfdfd; font-family: 'Inter',sans-serif; font-size: 1.125rem; font-weight: 400; color: rgba(0,0,0,.84); overflow: auto; }
+body { background-image: url("../img/dot_grid.png"); background-repeat: repeat; margin: 0; padding: 0; min-height: 100vh; background-color: #fdfdfd; font-family: 'Inter',sans-serif; font-size: 1.125rem; font-weight: 400; color: rgba(0,0,0,.84); overflow: auto; }
 p { margin-top: 0; margin-bottom: 1rem; }
 h1 { margin-top: 0; margin-bottom: 2rem; font-weight: 600; font-size: 2rem; line-height: 1.25!important; }
 a { color: #400eeb; font-weight: 700; border-bottom: 3px solid rgba(64, 14, 235, .20); text-decoration: none; transition: 0.2s border-color cubic-bezier(.6,.6,.4,.9), 0.1s; }
@@ -40,7 +40,8 @@ img, video {
 
 .container_md { padding-right: 42px; padding-left: 42px; margin-right: auto; margin-left: auto; max-width: 820px; }
 .container_lg { padding-right: 22px; padding-left: 22px; margin-right: auto; margin-left: auto; max-width: 1180px; }
-.display { font-size: 2.3rem; padding-bottom: 1rem; line-height: 1.5!important;}
+.navbar { margin-right: auto; margin-left: auto; max-width: 820px; }
+.display { font-size: 2.18rem; padding-bottom: 1rem; line-height: 1.5!important;}
 .lead { font-size: 1.6rem; line-height: 1.75; }
 .small, small { font-size: 85%; }
 .text_center { text-align: center!important; }
@@ -71,10 +72,11 @@ img, video {
 .img_link { text-decoration: none !important; border:0px !important; animation: none!important; }
 .badge_secondary { background-color: #efefef; line-height: 1; color: #525b65; border-radius: 8rem; display: inline-block; padding: .4em .6em; font-size: 80%; font-weight: 700; text-align: center; white-space: nowrap; vertical-align: baseline; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
 .callout_media { box-shadow: -8px 8px 0 0 rgba(0,0,0,.84); border: 1px solid #fdfdfd; }
-.callout_section { padding: 2rem; box-shadow: -8px 8px 0 0 rgba(0,0,0,.84); border: 3px solid rgba(0,0,0,.84); }
+.callout_section { background-color: #fdfdfd; padding: 2rem; box-shadow: -8px 8px 0 0 rgba(0,0,0,.84); border: 3px solid rgba(0,0,0,.84); }
 .callout_section h1 { font-size: 1.6rem; margin-bottom: 1rem; }
 .callout_discreet { padding: 0.6rem 1rem; background-color: hsla(200,5%,78%,.2) }
 
+.nav { background-color: #fdfdfd; }
 .nav a { position: relative; color: rgba(0,0,0,.84); font-weight: 700; border-bottom: none; text-decoration: none; transition: none; padding: 6px 0px; }
 .nav a:before { content: ""; position: absolute; width: 0; height: 3px; bottom: 0; left: 0; background-color: rgba(0,0,0,.84); visibility: hidden; transition: all 0.2s ease-in-out; }
 .nav a:hover { background-image: none; }
@@ -82,7 +84,7 @@ img, video {
 .nav .active:before { visibility: visible; content: ""; position: absolute; width: 100%; height: 3px; bottom: 0; left: 0; background-color: rgba(0,0,0,.84); }
 .hero_sm { max-width: 58%; }
 .hero_lg { max-width: 86%; }
-#navbar { position: sticky; top: 0; z-index: 1; background-color: #fdfdfd; }
+#navbar { position: sticky; top: 0; z-index: 1; }
 #footer { margin-top: 4rem;padding-bottom: 2rem; }
 
 .grid_md { max-width: 100%; display: grid; grid-gap: 1.6rem; }
@@ -108,12 +110,13 @@ img, video {
     .logo { display: none;}
     .logo_md { display: none;}
     .small, small { font-size: 100%; }
+    .nav { background-color: transparent; }
     #navbar { background-color: rgba(255, 219, 88, 1); }
     #navbar .my_1 { margin-top: 0rem!important; margin-bottom: 0rem!important; }
     #navbar .mt_2 { margin-top: 0rem!important; }
     #navbar .mr_2 { margin-right: 1rem!important; }
-    #navbar .mobile_scroll { overflow: auto; white-space: nowrap; margin: 0 -22px; padding: 1rem; }
-    #navbar .mobile_overlay { position: absolute; right: 0; z-index: 2; width: 38px; height: 58px; background-image: linear-gradient(to right,rgba(255, 219, 88, 0), rgba(255, 219, 88, 1)); }
+    #navbar .mobile_scroll { overflow: auto; white-space: nowrap; margin: 0 -10px; padding: 0.4rem; display: flex; justify-content: center;}
+    #navbar .mobile_overlay { position: absolute; right: 0; z-index: 2; width: 38px; height: 57x; background-image: linear-gradient(to right,rgba(255, 219, 88, 0), rgba(255, 219, 88, 1)); }
 }
 @media (min-width: 600px) {
     .grid_lg { grid-template-columns: repeat(2, 1fr); }
@@ -135,6 +138,7 @@ img, video {
 }
 @media(min-width: 1800px) {
     .container_md { max-width:900px; } 
+    .navbar { max-width:900px; } 
     html {font-size:1.125rem;}
 }
 
