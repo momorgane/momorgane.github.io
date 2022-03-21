@@ -39,7 +39,7 @@ img, video { aspect-ratio: attr(width) / attr(height); }
 .container_md { padding-right: 42px; padding-left: 42px; margin-right: auto; margin-left: auto; max-width: 820px; }
 .container_lg { padding-right: 22px; padding-left: 22px; margin-right: auto; margin-left: auto; max-width: 1180px; }
 .navbar { margin-right: auto; margin-left: auto; max-width: 820px; }
-.display { font-size: 2.18rem; padding-bottom: 1rem; line-height: 1.5!important;}
+.display { font-size: 2.38rem; padding-bottom: 1rem; line-height: 1.5!important;}
 .lead { font-size: 1.6rem; line-height: 1.75; }
 .small, small { font-size: 85%; }
 .text_center { text-align: center!important; }
@@ -135,9 +135,10 @@ img, video { aspect-ratio: attr(width) / attr(height); }
     .logo { display: block;}
 }
 @media(min-width: 1800px) {
+    html {font-size:1.125rem;}
+    .display { font-size: 2.32rem;}
     .container_md { max-width:900px; } 
     .navbar { max-width:900px; } 
-    html {font-size:1.125rem;}
 }
 
 .youtube_container { position: relative; overflow: hidden; width: 100%; padding-top: 56.25%; }
