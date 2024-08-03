@@ -74,7 +74,7 @@ img, video { aspect-ratio: attr(width) / attr(height); }
 .callout_section { background-color: #fdfdfd; padding: 2rem; box-shadow: -8px 8px 0 0 rgba(0,0,0,.84); border: 3px solid rgba(0,0,0,.84); }
 .callout_section h1 { font-size: 1.6rem; margin-bottom: 1rem; }
 .callout_discreet { padding: 0.6rem 1rem; background-color: hsla(200,5%,78%,.2) }
-.announcement { background-color: rgba(255, 219, 88, 1); padding-top: 1rem; padding-bottom: 1rem; padding-left: 1.4rem; padding-right: 1.4rem; box-shadow: -8px 8px 0 0 rgba(0,0,0,.84); border: 3px solid rgba(0,0,0,.84);}
+.announcement { background-color: rgba(255, 219, 88, 1); padding-top: 0.8rem; padding-bottom: 0.8rem; padding-left: 2rem; padding-right: 2rem; box-shadow: -8px 8px 0 0 rgba(0,0,0,.84); border: 3px solid rgba(0,0,0,.84);}
 .navbg { background-color: #fdfdfd; }
 .nav a { position: relative; color: rgba(0,0,0,.84); font-weight: 700; border-bottom: none; text-decoration: none; transition: none; padding: 6px 0px; }
 .nav a:before { content: ""; position: absolute; width: 0; height: 3px; bottom: 0; left: 0; background-color: rgba(0,0,0,.84); visibility: hidden; transition: all 0.2s ease-in-out; }
