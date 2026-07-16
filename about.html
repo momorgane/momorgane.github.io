@@ -151,6 +151,12 @@
     </filter>
   </defs>
 </svg>
+<svg width="0" height="0" aria-hidden="true">
+  <filter id="card-filter">
+    <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" seed="7" result="noise"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="6"/>
+  </filter>
+</svg>
 
 </body>
 </html>

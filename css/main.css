@@ -1,5 +1,5 @@
 html { margin: 0; padding: 0; scroll-behavior: smooth; scroll-padding-top: 70px; line-height: 1.5; }
-body { background-image: url("../img/dot_grid.png"); background-repeat: repeat; margin: 0; padding: 0; min-height: 100vh; background-color: #fdfdfd; font-family: 'Inter',sans-serif; font-size: 1.125rem; font-weight: 400; color: rgba(0,0,0,.84); overflow: auto; }
+body { background-image: url("../img/dot_grid.png"); background-repeat: repeat; margin: 0; padding: 0; min-height: 100vh; background-color: rgb(251, 251, 251); font-family: 'Inter',sans-serif; font-size: 1.125rem; font-weight: 400; color: rgba(0,0,0,.84); overflow: auto; }
 p { margin-top: 0; margin-bottom: 1rem; }
 h1 { margin-top: 0; margin-bottom: 2rem; font-family: 'Lato', 'Inter', sans-serif; font-weight: 600; font-size: 2rem; line-height: 1.25; }
 a { color: #400eeb; font-weight: 700; border-bottom: 3px solid rgba(64, 14, 235, .20); text-decoration: none; transition: 0.2s border-color cubic-bezier(.6,.6,.4,.9), 0.1s; }
@@ -41,7 +41,7 @@ li { margin-bottom:0.2rem; }
 .lead { font-size: 1.4rem; line-height: 1.6; }
 .small, small { font-size: 85%; }
 .text_center { text-align: center!important; }
-.text_muted { color: #525b65!important; }
+.text_muted { color:rgb(119, 115, 137)!important; }
 .text_bold { font-weight: 700; }
 .divider_scribble { display: block; width: 100%; height: 12px; margin: 2rem 0; overflow: visible; pointer-events: none; }
 
@@ -70,16 +70,41 @@ li { margin-bottom:0.2rem; }
 .img_fluid { max-width: 100%; height: auto; }
 .img_cover { width: 100%; height: 100%; object-fit: cover; }
 .img_link { text-decoration: none !important; border:0px !important; animation: none!important; }
-.badge_secondary { background-color: #efefef; line-height: 1; color: #525b65; border-radius: 8rem; display: inline-block; padding: .4em .6em; font-size: 80%; font-weight: 600; text-align: center; white-space: nowrap; vertical-align: baseline; }
-.callout_section { background-color: #fdfdfd; padding: 2rem; box-shadow: -8px 8px 0 0 rgba(0,0,0,.84); border: 3px solid rgba(0,0,0,.84); }
+.badge_secondary { background-color: rgb(238, 238, 244); line-height: 1; color: rgb(119, 115, 137); border-radius: 8rem; display: inline-block; padding: .4em .6em; font-size: 80%; font-weight: 600; text-align: center; white-space: nowrap; vertical-align: baseline; }
+.callout_section {
+  position: relative;
+  padding: 2rem;
+}
+.callout_section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #fdfdfd;
+  border: 3px solid rgba(0,0,0,.84);
+  box-shadow: -8px 8px 0 0 rgba(0,0,0,.84);
+  filter: url(#card-filter);
+  z-index: -1;
+}
 .callout_section h1 { font-size: 1.6rem; margin-bottom: 1rem; }
 .callout_discreet { padding: 0.6rem 1rem; background-color: hsla(200,5%,78%,.2) }
-.announcement { background-color: rgba(255, 219, 88, 1); padding-top: 0.8rem; padding-bottom: 0.8rem; padding-left: 2rem; padding-right: 2rem; box-shadow: -8px 8px 0 0 rgba(0,0,0,.84); border: 3px solid rgba(0,0,0,.84);}
+/* .announcement { background-color: rgba(255, 219, 88, 1); padding-top: 0.8rem; padding-bottom: 0.8rem; padding-left: 2rem; padding-right: 2rem; box-shadow: -8px 8px 0 0 rgba(0,0,0,.84); border: 3px solid rgba(0,0,0,.84);} */
+.announcement {
+  position: relative;
+  padding: 0.8rem 2rem;
+}
+.announcement::before {
+  content: "";
+  position: absolute;
+  inset: -4px;              /* breathing room so the wobble doesn't clip */
+  background-color: rgba(255, 219, 88, 1);
+  border: 3px solid rgba(0,0,0,.84);
+  box-shadow: -8px 8px 0 0 rgba(0,0,0,.84);
+  filter: url(#card-filter);
+  z-index: -1;
+}
 /* .navbg { background-color: #fdfdfd; } */
 .navbg { background-color: #fdfdfd; }
-/* Progressive enhancement: transparent nav that fades to white over the first
-   120px of scroll. Browsers without scroll-driven animations (e.g. Firefox)
-   skip this block and keep the solid white nav above. */
+/* Progressive enhancement: transparent nav that fades to white over the first 120px of scroll. */
 @supports (animation-timeline: scroll()) {
   @media (min-width: 600px) {
     .navbg {
